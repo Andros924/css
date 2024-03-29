@@ -1,0 +1,58 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 600px; 
+  margin: 0 auto;
+}
+
+.green,
+.orange,
+.blue {
+  background-color: #8ffda7; 
+  padding: 2em;
+  text-align: center;
+}
+
+.yellow,
+.red {
+  background-color: #ffff92; 
+  text-align: center;
+}
+
+.yellow ul,
+.red ul {
+  padding: 0;
+  list-style: none;
+}
+
+.yellow li,
+.red li {
+  background-color: white;
+  margin: 1em;
+  padding: 1em;
+}
+
+
+.green {
+  grid-row: 1 / span 2;
+}
+
+.orange {
+  grid-row: 3;
+}
+
+.blue {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+}
+
+.yellow {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.red {
+  grid-column: 1;
+  grid-row: 2;
+}
