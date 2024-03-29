@@ -1,11 +1,18 @@
 body {
-  width: 60em;
   margin: 0 auto;
+  width: 60em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
 }
 
 section {
   padding: 2em;
   margin: 1em;
+  flex: 1 0 20%; /* flex: grow shrink basis */
 }
 
 #green {
