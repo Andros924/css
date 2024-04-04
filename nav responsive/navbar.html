@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="/nav responsive/style.css">
+  <title>Navbar Responsive</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <nav>
     <div class="nav-container">
       <h1>Navbar</h1>
-      <ul>
-        <li><a href="">home</a></li>
-        <li><a href="">link</a></li>
-        <li><button>dropdown</button></li>
-        <li><button disabled>disabled</button></li>
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Dropdown</a></li>
+        <li><a href="#">Disabled</a></li>
       </ul>
       <div class="search-bar">
-        <input type="text" placeholder="search">
-        <button>search</button>
+        <input type="text" placeholder="Search">
+        <button>Search</button>
       </div>
+      <button class="hamburger-menu">
+        <svg width="30" height="30" viewBox="0 0 24 24">
+          <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+        </svg>
+      </button>
     </div>
   </nav>
 </body>
-
 </html>
